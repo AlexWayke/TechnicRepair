@@ -42,6 +42,17 @@ body{
 .wrapper{
   max-width: 1024px;
   margin: 0 auto;
+  &__title{
+    margin-top: 24px;
+    padding: 0 16px;
+  }
+  &__navigation{
+    margin-top: 24px;
+    padding: 0 16px;
+  }
+  &__article{
+    margin-top: 24px;
+  }
 }
 
 .header {
@@ -50,8 +61,6 @@ body{
   align-items: center;
   padding: 18px 16px;
   background-color: #fff;
-  &__burger {
-  }
   &__menu {
     position: relative;
     padding: 0 18px;
@@ -69,8 +78,6 @@ body{
       border-radius: 2px;
       background: #EAEAEA;
     }
-  }
-  &__logo {
   }
   &__list {
     display: none;
@@ -103,11 +110,9 @@ body{
   }
 }
 .title{
-  margin-top: 24px;
   position: relative;
   display: flex;
   justify-content:space-between;
-  padding: 0 16px;
   &__text{
     font-family: TTLakes-bold;
     font-weight: 700;
@@ -130,8 +135,6 @@ body{
   }
 }
 .navigation{
-  margin-top: 24px;
-  padding: 0 16px;
   &__list{
     display: flex;
     overflow-x: scroll;
@@ -163,7 +166,6 @@ body{
   }
 }
 .article {
-  margin-top: 24px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -210,6 +212,20 @@ body{
   }
 }
 @media (min-width:768px) {
+  .wrapper{
+    &__title{
+      margin-top: 24px;
+      padding: 0 16px;
+    }
+    &__navigation{
+      margin-top: 32px;
+      padding: 0 24px;
+    }
+    &__article{
+      margin-top: 32px;
+      padding: 0 24px;
+    }
+  }
   .header{
     &__menu{
       margin-left: 20px;
@@ -228,15 +244,9 @@ body{
       display: flex;
     }
   }
-  .navigation{
-    margin-top: 32px;
-    padding: 0 24px;
-  }
   .article {
-    margin-top: 32px;
     flex-direction: row;
     gap: 48px;
-    padding: 0 24px;
     &__info{
       padding: 0;
     }
@@ -254,6 +264,19 @@ body{
   }
 }
 @media (min-width:1024px) {
+  .wrapper{
+    &__title{
+      margin-top: 42px;
+    }
+    &__navigation{
+      margin-top: 8px;
+      padding: 0;
+    }
+    &__article{
+      margin-top: 8px;
+      padding: 0;
+    }
+  }
   .header{
     overflow: hidden;
     height: 0;
@@ -261,22 +284,15 @@ body{
     visibility: hidden;
   }
   .title{
-    margin-top: 42px;
     &__actions{
       display: flex;
       gap: 16px;
     }
   }
   .navigation{
-    margin-top: 8px;
-    padding: 0;
     &__list{
       overflow-x: visible;
       flex-wrap: wrap;
     }
-  }
-  .article {
-    margin-top: 8px;
-    padding: 0;
   }
 }
