@@ -1,101 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>Сервис</title>
-</head>
-<body>
-  <header class="header">
-    <div class="header__burger">
-      <button class="button">
-        <span class="button__wrapper">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Сервис</title>
+  </head>
+  <body>
+    <header class="header">
+      <button class="button header__burger">
+        <span class="button__icon">
           <img src="./src/icons/icon-burger.svg" alt="Menu">
         </span>
       </button>
-    </div>
-    <div class="header__menu">
-      <div class="header__logo">
-        <img src="./src/icons/icon-logo.svg" alt="Logo">
-      </div>
-      <div class="header__list">
-        <button class="button">
-          <span class="button__wrapper">
-            <img src="./src/icons/icon-call.svg" alt="Order call">
-          </span>
-        </button>
-        <button class="button">
-          <span class="button__wrapper">
-            <img src="./src/icons/icon-chat.svg" alt="Chat">
-          </span>
-        </button>
-        <button class="button">
-          <span class="button__wrapper">
-            <img src="./src/icons/icon-profile.svg" alt="Profile">
-          </span>
-        </button>
-      </div>
-    </div>
-    <div class="header__actions">
-      <button class="button">
-        <span class="button__wrapper">
-          <img src="./src/icons/icon-repair.svg" alt="Leave request">
-        </span>
-      </button>
-      <button class="button">
-        <span class="button__wrapper">
-          <img src="./src/icons/icon-check-status.svg" alt="Status">
-        </span>
-      </button>
-    </div>
-  </header>
-  <main>
-    <div class="wrapper">
-      <section class="title wrapper__title">
-        <h2 class="title__text">Услуги и сервисы</h2>
-        <div class="title__actions">
-          <button class="button">
-            <p class="button__text">Оставить заявку</p>
-            <span class="button__wrapper">
-              <img src="./src/icons/icon-repair.svg" alt="Leave request">
-            </span>
-          </button>
-          <button class="button">
-            <p class="button__text">Статус ремонта</p>
-            <span class="button__wrapper">
-              <img src="./src/icons/icon-check-status.svg" alt="Status">
-            </span>
-          </button>
-        </div>
-      </section>
-      <nav class="navigation wrapper__navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item navigation__item--active"><p>Ремонтируемые бренды</p></li>
-          <li class="navigation__item"><p>Ремонтируемые устройства</p></li>
-          <li class="navigation__item"><p>Цены на услуги</p></li>
-          <li class="navigation__item"><p>Адреса сервисных центров</p></li>
-          <li class="navigation__item"><p>Специальные цены</p></li>
-          <li class="navigation__item"><p>Отзывы</p></li>
+      <div class="header__menu">
+        <a href="" class="header__logo">
+          <img src="./src/icons/icon-logo.svg" alt="Logo">
+        </a>
+        <ul class="header__list">
+          <li>
+            <button class="button">
+              <span class="button__icon">
+                <img src="./src/icons/icon-call.svg" alt="Order call">
+              </span>
+            </button>
+          </li>
+          <li>
+            <button class="button">
+              <span class="button__icon">
+                <img src="./src/icons/icon-chat.svg" alt="Chat">
+              </span>
+            </button>
+          </li>
+          <li>
+            <button class="button">
+              <span class="button__icon">
+                <img src="./src/icons/icon-profile.svg" alt="Profile">
+              </span>
+            </button>
+          </li>
         </ul>
-      </nav>
-      <section class="article wrapper__article">
-        <div class="article__info">
-          <span class="article__text">
-            <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-            <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+      </div>
+      <div class="header__actions">
+        <button class="button">
+          <span class="button__icon">
+            <img src="./src/icons/icon-repair.svg" alt="Leave request">
           </span>
-          <button class="article__more">
-            <span class="article__more-icon"></span>
-            <p class="article__more-text">Читать далее</p>
-          </button>
-        </div>
-        <div class="article__banner">
-          <img src="./src/banners/article-banner.png" alt="">
-        </div>
-      </section>
+        </button>
+        <button class="button">
+          <span class="button__icon">
+            <img src="./src/icons/icon-check-status.svg" alt="Status">
+          </span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        <section class="title wrapper__title">
+          <h2 class="title__text">Услуги и сервисы</h2>
+          <div class="title__actions">
+            <button class="button">
+              <span class="button__text">Оставить заявку</span>
+              <span class="button__icon">
+                <img src="./src/icons/icon-repair.svg" alt="Leave request">
+              </span>
+            </button>
+            <button class="button">
+              <span class="button__text">Статус ремонта</span>
+              <span class="button__icon">
+                <img src="./src/icons/icon-check-status.svg" alt="Status">
+              </span>
+            </button>
+          </div>
+        </section>
+        <nav class="navigation wrapper__navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item--active"><p>Ремонтируемые бренды</p></li>
+            <li class="navigation__item"><p>Ремонтируемые устройства</p></li>
+            <li class="navigation__item"><p>Цены на услуги</p></li>
+            <li class="navigation__item"><p>Адреса сервисных центров</p></li>
+            <li class="navigation__item"><p>Специальные цены</p></li>
+            <li class="navigation__item"><p>Отзывы</p></li>
+          </ul>
+        </nav>
+        <section class="article wrapper__article">
+          <div class="article__info">
+            <div class="article__text">
+              <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+              <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+            </div>
+            <button class="article__more">
+              <span class="article__more-icon"></span>
+              <span class="article__more-text">Читать далее</span>
+            </button>
+          </div>
+          <div class="article__banner">
+            <img src="./src/banners/article-banner.png" alt="">
+          </div>
+        </section>
+      </div>
     </main>
-  </div>
-</body>
+  </body>
 </html>
