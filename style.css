@@ -22,66 +22,6 @@ aside, nav, footer, header, section, main {
   display: block;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-ul, ul li {
-  list-style: none;
-  padding: 0;
-}
-
-img {
-  vertical-align: top;
-}
-
-img, svg {
-  max-width: 100%;
-  height: auto;
-}
-
-address {
-  font-style: normal;
-}
-
-input, textarea, button, select {
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
-  background-color: transparent;
-}
-
-input::-ms-clear {
-  display: none;
-}
-
-button, input[type=submit] {
-  display: inline-block;
-  box-shadow: none;
-  background-color: transparent;
-  background: none;
-  cursor: pointer;
-}
-
-input:focus, input:active,
-button:focus, button:active {
-  outline: none;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-label {
-  cursor: pointer;
-}
-
-legend {
-  display: block;
-}
-
 @font-face {
   font-family: "TTLakes-medium";
   src: url(./src/fonts/TypeType\ -\ TTLakes-Medium.woff2);
@@ -107,6 +47,17 @@ body {
 .wrapper {
   max-width: 1024px;
   margin: 0 auto;
+}
+.wrapper__title {
+  margin-top: 24px;
+  padding: 0 16px;
+}
+.wrapper__navigation {
+  margin-top: 24px;
+  padding: 0 16px;
+}
+.wrapper__article {
+  margin-top: 24px;
 }
 
 .header {
@@ -138,6 +89,9 @@ body {
   display: none;
   gap: 16px;
 }
+.header__list li {
+  list-style-type: none;
+}
 .header__actions {
   display: flex;
   gap: 16px;
@@ -147,9 +101,11 @@ body {
   display: flex;
   align-items: center;
   gap: 9px;
+  background: none;
+  cursor: pointer;
   transition: 0.3s all ease;
 }
-.button__wrapper {
+.button__icon {
   width: 40px;
   height: 40px;
   background-color: #FF3E79;
@@ -163,14 +119,13 @@ body {
 }
 .button:hover {
   opacity: 0.9;
+  transform: scale(1.1);
 }
 
 .title {
-  margin-top: 24px;
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 0 16px;
 }
 .title__text {
   font-family: TTLakes-bold;
@@ -193,13 +148,12 @@ body {
   background: #41F6D7;
 }
 
-.navigation {
-  margin-top: 24px;
-  padding: 0 16px;
-}
 .navigation__list {
   display: flex;
   overflow-x: scroll;
+}
+.navigation__list li {
+  list-style-type: none;
 }
 .navigation__list::-webkit-scrollbar {
   width: 0;
@@ -225,10 +179,10 @@ body {
 }
 .navigation__item:hover {
   opacity: 0.9;
+  transform: scale(1.1);
 }
 
 .article {
-  margin-top: 24px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -251,6 +205,8 @@ body {
   display: flex;
   gap: 8px;
   align-items: center;
+  background: none;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 .article__more-icon {
@@ -264,6 +220,7 @@ body {
 }
 .article__more:hover {
   opacity: 0.8;
+  transform: scale(1.1);
 }
 .article__more:focus {
   opacity: 0.8;
@@ -276,6 +233,25 @@ body {
 }
 
 @media (min-width: 768px) {
+  .wrapper__title {
+    margin-top: 24px;
+    padding: 0 16px;
+  }
+  .wrapper__navigation {
+    margin-top: 32px;
+    padding: 0 24px;
+  }
+  .wrapper__article {
+    margin-top: 32px;
+    padding: 0 24px;
+  }
+  .header__logo {
+    transition: all 0.3s ease;
+  }
+  .header__logo:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
   .header__menu {
     margin-left: 20px;
     padding: 0 22px;
@@ -292,15 +268,9 @@ body {
   .header__list {
     display: flex;
   }
-  .navigation {
-    margin-top: 32px;
-    padding: 0 24px;
-  }
   .article {
-    margin-top: 32px;
     flex-direction: row;
     gap: 48px;
-    padding: 0 24px;
   }
   .article__info {
     padding: 0;
@@ -318,29 +288,29 @@ body {
   }
 }
 @media (min-width: 1024px) {
+  .wrapper__title {
+    margin-top: 42px;
+  }
+  .wrapper__navigation {
+    margin-top: 8px;
+    padding: 0;
+  }
+  .wrapper__article {
+    margin-top: 8px;
+    padding: 0;
+  }
   .header {
     overflow: hidden;
     height: 0;
     padding: 0;
     visibility: hidden;
   }
-  .title {
-    margin-top: 42px;
-  }
   .title__actions {
     display: flex;
     gap: 16px;
   }
-  .navigation {
-    margin-top: 8px;
-    padding: 0;
-  }
   .navigation__list {
     overflow-x: visible;
     flex-wrap: wrap;
-  }
-  .article {
-    margin-top: 8px;
-    padding: 0;
   }
 }/*# sourceMappingURL=style.css.map */
