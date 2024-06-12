@@ -4,16 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style.css">
     <title>Сервис</title>
   </head>
   <body>
     <header class="header">
-      <button class="button header__burger">
-        <span class="button__icon">
+      <input class="header__burger-input" type="checkbox" id="burger" name="burger">
+      <label for="burger"  class="button header__burger">
+        <div class="button__icon">
           <img src="./src/icons/icon-burger.svg" alt="Menu">
-        </span>
-      </button>
+        </div>
+      </label>
+      <div class="burger__menu">
+        <ul class="burger__list burger__menu-top">
+          <li>
+            <label for="burger" class="button">
+              <div class="button__icon">
+                <img src="./src/icons/icon-x.svg" alt="Close burger">
+              </div>
+            </label>
+          </li>
+          <li>
+            <a href="" class="header__logo">
+              <img src="./src/icons/icon-logo.svg" alt="Logo">
+            </a>
+          </li>
+          <li class="burger__list--end">
+            <button class="button">
+              <div class="button__icon">
+                <img src="./src/icons/icon-search.svg" alt="Search">
+              </div>
+            </button>
+          </li>
+        </ul>
+        <ul class="burger__list burger__menu-nav burger__list--col">
+          <li class="active"><a class="burger__link" href="#">Ремонт техники</a></li>
+          <li><a class="burger__link" href="#">Услуги и сервисы</a></li>
+          <li><a class="burger__link" href="#">Корпоративным клиентам</a></li>
+          <li><a class="burger__link" href="#">Продавцам техники</a></li>
+          <li><a class="burger__link" href="#">Партнерам</a></li>
+          <li><a class="burger__link" href="#">Производителям</a></li>
+          <li><a class="burger__link" href="#">Наши сервисные центры</a></li>
+          <li><a class="burger__link" href="#">Контакты</a></li>
+        </ul>
+        <ul class="burger__list burger__menu-contacts">
+          <li>
+            <button class="button">
+              <div class="button__icon">
+                <img src="./src/icons/icon-call.svg" alt="Order call">
+              </div>
+            </button>
+          </li>
+          <li>
+            <button class="button">
+              <div class="button__icon">
+                <img src="./src/icons/icon-chat.svg" alt="Chat">
+              </div>
+            </button>
+          </li>
+          <li>
+            <button class="button">
+              <div class="button__icon">
+                <img src="./src/icons/icon-profile.svg" alt="Profile">
+              </div>
+            </button>
+          </li>
+        </ul>
+        <a href="mailto:mail@cps.com" class="burger__menu-mail burger__link">mail@cps.com</a>
+        <a href="tel:+79999999999" class="burger__menu-phone burger__link">8 800 890 8900</a>
+        <ul class="burger__list burger__menu-lang">
+          <li class="active">
+            <a class="burger__link" href="#">RU</a>
+          </li>
+          <li>
+            <a class="burger__link" href="#">EN</a>
+          </li>
+          <li>
+            <a class="burger__link" href="#">CH</a>
+          </li>
+        </ul>
+      </div>
       <div class="header__menu">
         <a href="" class="header__logo">
           <img src="./src/icons/icon-logo.svg" alt="Logo">
@@ -21,58 +92,66 @@
         <ul class="header__list">
           <li>
             <button class="button">
-              <span class="button__icon">
+              <div class="button__icon">
                 <img src="./src/icons/icon-call.svg" alt="Order call">
-              </span>
+              </div>
             </button>
           </li>
           <li>
             <button class="button">
-              <span class="button__icon">
+              <div class="button__icon">
                 <img src="./src/icons/icon-chat.svg" alt="Chat">
-              </span>
+              </div>
             </button>
           </li>
           <li>
             <button class="button">
-              <span class="button__icon">
+              <div class="button__icon">
                 <img src="./src/icons/icon-profile.svg" alt="Profile">
-              </span>
+              </div>
             </button>
           </li>
         </ul>
       </div>
-      <div class="header__actions">
-        <button class="button">
-          <span class="button__icon">
-            <img src="./src/icons/icon-repair.svg" alt="Leave request">
-          </span>
-        </button>
-        <button class="button">
-          <span class="button__icon">
-            <img src="./src/icons/icon-check-status.svg" alt="Status">
-          </span>
-        </button>
-      </div>
+      <ul class="header__list header__list--show-sm">
+        <li>
+          <button class="button">
+            <div class="button__icon">
+              <img src="./src/icons/icon-repair.svg" alt="Leave request">
+            </div>
+          </button>
+        </li>
+        <li>
+          <button class="button">
+            <div class="button__icon">
+              <img src="./src/icons/icon-check-status.svg" alt="Status">
+            </div>
+          </button>
+        </li>
+      </ul>
     </header>
     <main>
       <div class="wrapper">
         <section class="title wrapper__title">
           <h2 class="title__text">Услуги и сервисы</h2>
-          <div class="title__actions">
-            <button class="button">
-              <span class="button__text">Оставить заявку</span>
-              <span class="button__icon">
-                <img src="./src/icons/icon-repair.svg" alt="Leave request">
-              </span>
-            </button>
-            <button class="button">
-              <span class="button__text">Статус ремонта</span>
-              <span class="button__icon">
-                <img src="./src/icons/icon-check-status.svg" alt="Status">
-              </span>
-            </button>
-          </div>
+          <ul class="title__actions">
+            <li>
+              <button class="button">
+                <p class="button__text">Оставить заявку</p>
+                <div class="button__icon">
+                  <img src="./src/icons/icon-repair.svg" alt="Leave request">
+                </div>
+              </button>
+            </li>
+            <li>
+              <button class="button">
+                <p class="button__text">Статус ремонта</p>
+                <div class="button__icon">
+                  <img src="./src/icons/icon-check-status.svg" alt="Status">
+                </div>
+              </button>
+            </li>
+          </ul>
         </section>
         <nav class="navigation wrapper__navigation">
           <ul class="navigation__list">
@@ -96,7 +175,7 @@
             </button>
           </div>
           <div class="article__banner">
-            <img src="./src/banners/article-banner.png" alt="">
+            <img class="article__img" src="./src/banners/article-banner.png" alt="">
           </div>
         </section>
       </div>
