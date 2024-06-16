@@ -9,175 +9,73 @@
     <title>Сервис</title>
   </head>
   <body>
-    <header class="header">
-      <input class="header__burger-input" type="checkbox" id="burger" name="burger">
-      <label for="burger"  class="button header__burger">
-        <div class="button__icon">
-          <img src="./src/icons/icon-burger.svg" alt="Menu">
-        </div>
-      </label>
-      <div class="burger__menu">
-        <ul class="burger__list burger__menu-top">
-          <li>
-            <label for="burger" class="button">
-              <div class="button__icon">
-                <img src="./src/icons/icon-x.svg" alt="Close burger">
-              </div>
-            </label>
-          </li>
-          <li>
-            <a href="" class="header__logo">
-              <img src="./src/icons/icon-logo.svg" alt="Logo">
-            </a>
-          </li>
-          <li class="burger__list--end">
-            <button class="button">
-              <div class="button__icon">
-                <img src="./src/icons/icon-search.svg" alt="Search">
-              </div>
-            </button>
-          </li>
-        </ul>
-        <ul class="burger__list burger__menu-nav burger__list--col">
-          <li class="active"><a class="burger__link" href="#">Ремонт техники</a></li>
-          <li><a class="burger__link" href="#">Услуги и сервисы</a></li>
-          <li><a class="burger__link" href="#">Корпоративным клиентам</a></li>
-          <li><a class="burger__link" href="#">Продавцам техники</a></li>
-          <li><a class="burger__link" href="#">Партнерам</a></li>
-          <li><a class="burger__link" href="#">Производителям</a></li>
-          <li><a class="burger__link" href="#">Наши сервисные центры</a></li>
-          <li><a class="burger__link" href="#">Контакты</a></li>
-        </ul>
-        <ul class="burger__list burger__menu-contacts">
-          <li>
-            <button class="button">
-              <div class="button__icon">
-                <img src="./src/icons/icon-call.svg" alt="Order call">
-              </div>
-            </button>
-          </li>
-          <li>
-            <button class="button">
-              <div class="button__icon">
-                <img src="./src/icons/icon-chat.svg" alt="Chat">
-              </div>
-            </button>
-          </li>
-          <li>
-            <button class="button">
-              <div class="button__icon">
-                <img src="./src/icons/icon-profile.svg" alt="Profile">
-              </div>
-            </button>
-          </li>
-        </ul>
-        <a href="mailto:mail@cps.com" class="burger__menu-mail burger__link">mail@cps.com</a>
-        <a href="tel:+79999999999" class="burger__menu-phone burger__link">8 800 890 8900</a>
-        <ul class="burger__list burger__menu-lang">
-          <li class="active">
-            <a class="burger__link" href="#">RU</a>
-          </li>
-          <li>
-            <a class="burger__link" href="#">EN</a>
-          </li>
-          <li>
-            <a class="burger__link" href="#">CH</a>
-          </li>
-        </ul>
-      </div>
-      <div class="header__menu">
-        <a href="" class="header__logo">
-          <img src="./src/icons/icon-logo.svg" alt="Logo">
-        </a>
-        <ul class="header__list">
-          <li>
-            <button class="button">
-              <div class="button__icon">
-                <img src="./src/icons/icon-call.svg" alt="Order call">
-              </div>
-            </button>
-          </li>
-          <li>
-            <button class="button">
-              <div class="button__icon">
-                <img src="./src/icons/icon-chat.svg" alt="Chat">
-              </div>
-            </button>
-          </li>
-          <li>
-            <button class="button">
-              <div class="button__icon">
-                <img src="./src/icons/icon-profile.svg" alt="Profile">
-              </div>
-            </button>
-          </li>
-        </ul>
-      </div>
-      <ul class="header__list header__list--show-sm">
-        <li>
-          <button class="button">
-            <div class="button__icon">
-              <img src="./src/icons/icon-repair.svg" alt="Leave request">
-            </div>
-          </button>
-        </li>
-        <li>
-          <button class="button">
-            <div class="button__icon">
-              <img src="./src/icons/icon-check-status.svg" alt="Status">
-            </div>
-          </button>
-        </li>
-      </ul>
-    </header>
     <main>
       <div class="wrapper">
-        <section class="title wrapper__title">
-          <h2 class="title__text">Услуги и сервисы</h2>
-          <ul class="title__actions">
+        <aside class="burger__menu">
+          <ul class="burger__list burger__top">
             <li>
               <button class="button">
-                <p class="button__text">Оставить заявку</p>
                 <div class="button__icon">
-                  <img src="./src/icons/icon-repair.svg" alt="Leave request">
+                  <img src="./src/icons/icon-x.svg" alt="Close burger">
+                </div>
+              </button>
+            </li>
+            <li>
+              <a href="#" class="header__logo">
+                <img src="./src/icons/icon-logo.svg" alt="Logo">
+              </a>
+            </li>
+            <li class="burger__list--end">
+              <button class="button">
+                <div class="button__icon">
+                  <img src="./src/icons/icon-search.svg" alt="Search">
+                </div>
+              </button>
+            </li>
+          </ul>
+          <ul class="burger__nav">
+            <li class="active"><a class="burger__link" href="#">Ремонт техники</a></li>
+            <li><a class="burger__link" href="#">Услуги и сервисы</a></li>
+            <li><a class="burger__link" href="#">Корпоративным клиентам</a></li>
+            <li><a class="burger__link" href="#">Продавцам техники</a></li>
+            <li><a class="burger__link" href="#">Партнерам</a></li>
+            <li><a class="burger__link" href="#">Производителям</a></li>
+            <li><a class="burger__link" href="#">Наши сервисные центры</a></li>
+            <li><a class="burger__link" href="#">Контакты</a></li>
+          </ul>
+          <ul class="burger__list burger__contacts">
+            <li>
+              <button class="button">
+                <div class="button__icon">
+                  <img src="./src/icons/icon-call.svg" alt="Order call">
                 </div>
               </button>
             </li>
             <li>
               <button class="button">
-                <p class="button__text">Статус ремонта</p>
                 <div class="button__icon">
-                  <img src="./src/icons/icon-check-status.svg" alt="Status">
+                  <img src="./src/icons/icon-chat.svg" alt="Chat">
+                </div>
+              </button>
+            </li>
+            <li>
+              <button class="button">
+                <div class="button__icon">
+                  <img src="./src/icons/icon-profile.svg" alt="Profile">
                 </div>
               </button>
             </li>
           </ul>
-        </section>
-        <nav class="navigation wrapper__navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item navigation__item--active"><p>Ремонтируемые бренды</p></li>
-            <li class="navigation__item"><p>Ремонтируемые устройства</p></li>
-            <li class="navigation__item"><p>Цены на услуги</p></li>
-            <li class="navigation__item"><p>Адреса сервисных центров</p></li>
-            <li class="navigation__item"><p>Специальные цены</p></li>
-            <li class="navigation__item"><p>Отзывы</p></li>
-          </ul>
-        </nav>
-        <section class="article wrapper__article">
-          <div class="article__info">
-            <div class="article__text">
-              <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-              <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-            </div>
-            <button class="article__more">
-              <span class="article__more-icon"></span>
-              <span class="article__more-text">Читать далее</span>
-            </button>
+          <address class="burger__address">
+            <a href="mailto:mail@cps.com" class="burger__address-mail burger__link">mail@cps.com</a>
+            <a href="tel:+79999999999" class="burger__address-phone burger__link">8 800 890 8900</a>
+          </address>
+          <div class="burger__lang">
+            <a class="burger__link active" href="#">RU</a>
+            <a class="burger__link" href="#">EN</a>
+            <a class="burger__link" href="#">CH</a>
           </div>
-          <div class="article__banner">
-            <img class="article__img" src="./src/banners/article-banner.png" alt="">
-          </div>
-        </section>
+        </aside>
       </div>
     </main>
   </body>
